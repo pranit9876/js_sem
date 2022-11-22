@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // program to reverse a string
+        // take input from the user
+/*const string = prompt('Enter a string: ');
+
+function reverseString(str) {
+
+// return a new array of strings
+const arrayStrings = str.split("");
+
+// reverse the new created array elements
+const reverseArray = arrayStrings.reverse();
+
+// join all elements of the array into a string
+const joinArray = reverseArray.join("");
+
+// return the reversed string
+return joinArray;
+}
+const result = reverseString(string);
+document.write(result);
+*/
+
+
+
+
+
+/* Replace a string*/
+/*let str = "Hello baby !!!"
+document.write("Before replacement String is :"+str +"<br>");
+let result = str.replace("baby", "bsdk");
+document.write("After Replacement String is  :"+result+"<br>");
+*/
+
+
+/* Palindrome*/
+// program to check if the string is palindrome or not
+
+function checkPalindrome(string) {
+
+// find the length of a string
+const len = string.length;
+
+// loop through half of the string
+for (let i = 0; i < len / 2; i++) {
+
+    // check if first and last string are same
+    if (string[i] !== string[len - 1 - i]) {
+        return 'It is not a palindrome';
+    }
+}
+return 'It is a palindrome';
+}
+
+// take input
+const string = prompt('Enter a string: ');
+document.write("The String is:\n"+string+"<br>");
+
+// call the function
+const value = checkPalindrome(string);
+document.write(value);
+
+ 
+    </script>
+</body>
+</html>
